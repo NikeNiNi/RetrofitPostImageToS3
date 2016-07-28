@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2a2929"
+        android:gravity="center_vertical"
+       >
+
+        <TextView
+            android:id="@+id/tv_complete_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:background="@drawable/shape_pink"
+            android:textColor="#fff"
+            />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gv_main"
+        android:paddingTop="1dp"
+        android:layout_below="@id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:horizontalSpacing="3dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ee000000"
+        android:id="@+id/rl_bottom"
+        android:clipChildren="true" >
+
+        <TextView
+            android:id="@+id/dir_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="所有图片"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/dir_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="100张"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
